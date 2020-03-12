@@ -11,7 +11,8 @@
 char buf[LEN] = {'a', 'b', 'c'};
 
 void print_backward(int pos) {
-    if (pos == LEN) return;
+    if (pos == LEN)
+        return;
 
     print_backward(pos + 1);
     printf("%c\d", buf[pos]);
