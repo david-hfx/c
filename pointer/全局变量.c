@@ -10,6 +10,8 @@ char c;
 char *pc = &c;
 
 int main(int argc, char const *argv[]) {
+    int *p = NULL; /* 初始化为NULL，避免出现野指针 */
+    *p = 0;        /*  segmentation fault */
     printf("pi=%p, pc=%p\n", pi, pc);
     return 0;
 }
